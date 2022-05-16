@@ -1,0 +1,12 @@
+# batch_size: 2**6
+batch_size: 64
+epochs: 50
+val_prop: 0.4
+es_patience: 5
+# es_min_delta = 1e-4
+es_min_delta: 0.0001
+rlr_patience: 5
+rlr_cooldown: 5
+rlr_factor: 0.9
+# rlr_min_lr = 1e-5
+rlr_min_lr: 0.00001
