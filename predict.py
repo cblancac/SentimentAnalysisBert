@@ -23,7 +23,7 @@ bert_embedder = BertEmbedder(False, # False if you don't have gpu, True in anoth
 model = load_model('models/gru+cnn_10000.hdf5')
 
 # je suis heureux | Estaría feliz | سوف أسافر الأسبوع المقبل | 悲しいだろう | I am so sad
-sentences = input("Introduce here the sentence(s) you want to predict (separate by | if you introduce more than one): ")
+sentences = input("Introduce here the sentence(s) you want to predict (separate by | if you introduce more than one):\n ")
 sentences = sentences.split('|')
 sentences = [s.strip() for s in sentences]
 
@@ -43,4 +43,5 @@ feelings = list(zip(sentences,
                     [{'label':'POSITIVE', 'score': j[0]} if j[0]>0.5 else {'label':'NEGATIVE', 'score':1-j[0]} for j in feeling_value]))
 
 feelings = [(i[0],{**i[1], **i[2]}) for i in feelings]
-print(feelings)
+for f in feelings:
+    print(f)
