@@ -71,11 +71,14 @@ Finally the prediction of the feeling of a sentence can be done using the script
 Example:
     Running the script, `python predict.py`, you will receive a sentence asking you for introduce some sentence in any language. After you type the sentence you will see the output created with the model trained as the dictionary that has been already commented
     
-    Introduce here the sentence(s) you want to predict (separate by | if you introduce more than one):
+
     
-    I'm publishing for the first time on GitHub!
-        
-    [("Today I'm publishing for the first time on GitHub!", {'to_en': "Today I'm publishing for the first time on GitHub!", 'label': 'POSITIVE', 'score': 0.8692686})]
+```
+>>> Introduce here the sentence(s) you want to predict (separate by | if you introduce more than one):
+I'm publishing for the first time on GitHub!
+
+[("Today I'm publishing for the first time on GitHub!", {'to_en': "Today I'm publishing for the first time on GitHub!", 'label': 'POSITIVE', 'score': 0.8692686})]
+```
 
     
 
