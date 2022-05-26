@@ -9,7 +9,8 @@ This project trains some models in order to predict the feeling of a given sente
 
 ## :gear: Setup
 - Clone the repository: `https://github.com/cblancac/SentimentAnalysisBert`.
-- pip install -r `requirements.txt`.
+- `pip install pip==20.2`
+- `pip install -r requirements.txt`
 - Change the line 151 in google_trans_new/google_trans_new.py: 
   `response = (decoded_line + ']')` -> `response = decoded_line`.
 - Download the English language model (large ~382 MB): `python -m spacy download en_core_web_lg`.
