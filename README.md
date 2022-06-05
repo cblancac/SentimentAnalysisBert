@@ -14,7 +14,7 @@ This project trains some models in order to predict the feeling of a given sente
 - Change the line 151 in google_trans_new/google_trans_new.py: 
   `response = (decoded_line + ']')` -> `response = decoded_line`.
 - Download the English language model (large ~382 MB): `python -m spacy download en_core_web_lg`.
-- (1) Creating the transformation of the texts or (2) training the models is expensive computacionally, so a solution could be use an instance EC2 (Amazon Elastic Compute Cloud). The instance `c5a.8xlarge` can be enough to deal with the full transformation of the raw texts, but only could train the models using a subset of them (if you want to train a model with the complete dataset you would need to move to a bigger instace EC2).
+- (1) Creating the transformation of the texts or (2) training the models is expensive computacionally, so a solution could be use an instance EC2 (Amazon Elastic Compute Cloud). The instance `c5a.8xlarge` can be enough to deal with (1) the full transformation of the raw texts, but only could (2) train the models using a subset of them (if you want to train a model with the complete dataset you would need to move to a bigger instace EC2). Be very careful using this type of payment instances, check the prices initially and turn them off when you are not using them.
 - In order to get the tensors which represents the tweets of the train and test dataset, there are two options (due to GitHub doesn't allow to upload such big files):
     - (a) Download the files using the links included in the `download_tensors.txt`. Create a new folder called tensors, unzipped the two files (with `gunzip filename`) and add them in the folder tensors.
     - (b) Generate your own tensors using the script `embedder_bert_texts.py`.
