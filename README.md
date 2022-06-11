@@ -44,7 +44,7 @@ Once the text are converted to tensors, it can feed different neural networks (N
 - Gated Recurrent Unit (GRU)
 - Combination of Gated Recurrent Unit with Convolutional Neural Network (GRU+CNN)
 
-To choose the best combination of some hyperparameter, Random Search strategy has been used. Using the script `train_model.py`, some light models have been trained with 1.000 and 10.000 tweets for every of the NN just mentioned. This models have been saved in the folder `models`. The best combination of the hyperparameters per model are saved in the file `results.csv`. You can train your own models choosing the size and your favourite neural network. 
+To choose the best combination of some hyperparameter, Random Search strategy has been used ([Guide to Hyperparameters Optimization for Deep Learning Models](https://blog.floydhub.com/guide-to-hyperparameters-search-for-deep-learning-models/)). Using the script `train_model.py`, some light models have been trained with 1.000 and 10.000 tweets for every of the NN just mentioned. This models have been saved in the folder `models`. The best combination of the hyperparameters per model are saved in the file `results.csv`. You can train your own models choosing the size and your favourite neural network. 
 
 ## :bar_chart: Evaluate the models
 
